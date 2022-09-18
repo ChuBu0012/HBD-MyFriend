@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <link href="./dist/output.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="./jquery.min.js"></script>
+    <script type="text/javascript" src="jquery.fireworks.js"></script>
+  </head>
+  <body class="flex justify-center items-center box-border transition-all">
+    <div
+      class="container h-auto flex items-center flex-col bg-gradient-to-r from-pinkpastel to-bluepastel p-8 pb-12 m-5 lg:m-10 rounded-lg"
+      id="container"
+    >
+      <div class="w-full h-screen absolute z-10" id="fireworks"></div>
+      <audio
+        title="hbdsong"
+        id="hbdsong"
+        class=""
+        src="./Happy Birthday (Rock Version).mp3"
+        muted
+        loop
+      ></audio>
+      <h1
+        class="text-center text-6xl leading-snug z-10"
+        data-aos="fade-down"
+        data-aos-easing="linear"
+        data-aos-duration="1000"
+      >
+        <span>The</span><br />
+        <span class="font-semibold h2 animate-charcter relative" id="best"
+          >Best</span
+        ><br />
+        <span class="font-semibold">Birthday</span>
+      </h1>
+
+      <div class="flex justify-center items-center flex-col z-30">
+        <h2 class="text-center text-4xl mt-10 mb-10 " id="hbd">
+          Happy Birthday!
+        </h2>
+        <div class="" id="type" ></div>
+        <clickme class="text-sm transition-all animate-ping-slow cursor-pointer ">Click ME!!</clickme>
+        <img
+          src="./img/Best.png"
+          class="border-b-[10px] animate-spring border-sky-200 cursor-pointer rounded-xl rounded-t-none mt-8 lg:h-96"
+          alt=""
+          id="imgbest"
+          onclick="startmusic()"
+        />
+      </div>
+    </div>
+    <script src="./typing.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
